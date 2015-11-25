@@ -112,7 +112,7 @@ final class VideoTagPayloadReader extends TagPayloadReader {
       }
 
       // Construct and output the format.
-      MediaFormat mediaFormat = MediaFormat.createVideoFormat(MimeTypes.VIDEO_H264,
+      MediaFormat mediaFormat = MediaFormat.createVideoFormat(MediaFormat.NO_VALUE, MimeTypes.VIDEO_H264,
           MediaFormat.NO_VALUE, MediaFormat.NO_VALUE, durationUs, avcData.width, avcData.height,
           avcData.initializationData, MediaFormat.NO_VALUE, avcData.pixelWidthAspectRatio);
       output.format(mediaFormat);
